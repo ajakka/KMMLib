@@ -1,4 +1,4 @@
-package com.example.test_kmm_lib
+package net.ajakka.kmmlib
 
 class Greeting {
     private val platform: Platform = getPlatform()

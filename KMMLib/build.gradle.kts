@@ -2,11 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
-    id("maven-publish")
 }
-
-group = "net.ajakka.testkmmlib"
-version = "1.0.0"
 
 kotlin {
     android()
@@ -20,8 +16,12 @@ kotlin {
         version = "1.0"
         ios.deploymentTarget = "14.1"
         framework {
-            baseName = "shared"
+            baseName = "KMMLib"
         }
+
+        // Maps custom Xcode configuration to NativeBuildType
+        // xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = NativeBuildType.DEBUG
+        // xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = NativeBuildType.RELEASE
     }
     
     sourceSets {
@@ -55,7 +55,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.test_kmm_lib"
+    namespace = "net.ajakka.kmmlib"
     compileSdk = 32
     defaultConfig {
         minSdk = 21

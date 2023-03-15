@@ -1,4 +1,4 @@
-package com.example.test_kmm_lib
+package net.ajakka.kmmlib
 
 import platform.UIKit.UIDevice
 

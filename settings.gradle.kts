@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "test-kmm-lib"
-include(":shared")
+rootProject.name = "KMMLib"
+include(":KMMLib")

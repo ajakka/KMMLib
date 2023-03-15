@@ -1,4 +1,4 @@
-package com.example.test_kmm_lib
+package net.ajakka.kmmlib
 
 class AndroidPlatform : Platform {
     override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
